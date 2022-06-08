@@ -1,10 +1,30 @@
-Name: Harry Potter
-Contact Number: 09123456789
-Address: Hogwarts
-Date: June 08, 2022
-Fever? No
-Cough? No
-Sore Throat? No
-Headache? No
-COVID contact? No
-Gone outside the country? No
+Name: 2
+Contact Number: 2
+Address: 2
+Date: 2
+Fever? 2
+Cough? 2
+Sore Throat? 2
+Headache? 2
+COVID contact? 2
+Gone outside the country? 2
+Name: 1
+Contact Number: 1
+Address: 1
+Date: 1
+Fever? 1
+Cough? 1
+Sore Throat? 1
+Headache? 1
+COVID contact? 1
+Gone outside the country? 1
+Name: 2
+Contact Number: 2
+Address: 22
+Date: 2
+Fever? 2
+Cough? 2
+Sore Throat? 2
+Headache? 2
+COVID contact? 2
+Gone outside the country? 2

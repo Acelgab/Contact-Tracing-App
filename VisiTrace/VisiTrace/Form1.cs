@@ -40,11 +40,9 @@ namespace VisiTrace
             txtbxQuestion5.Hide();
             lblQuestion6.Hide();
             txtbxQuestion6.Hide();
-            
-
-
-
-
+            btnSave.Hide();
+            btnNewForm.Hide();
+  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -74,6 +72,8 @@ namespace VisiTrace
             txtbxQuestion5.Show();
             lblQuestion6.Show();
             txtbxQuestion6.Show();
+            btnNewForm.Show();
+            btnSave.Show();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -103,7 +103,8 @@ namespace VisiTrace
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter save = new StreamWriter (@"C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace.txt");
+            StreamWriter save = File.AppendText(@"C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace.txt");
+            
             save.WriteLine("Name: " + txtbxFullName.Text);
             save.WriteLine("Contact Number: " + txtbxContactNo.Text);
             save.WriteLine("Address: " + txtbxAddress.Text);
@@ -115,6 +116,24 @@ namespace VisiTrace
             save.WriteLine("COVID contact? " + txtbxQuestion5.Text);
             save.WriteLine("Gone outside the country? " + txtbxQuestion6.Text);
             save.Close();
+
+            MessageBox.Show("Saved!");
+            
+        }
+
+        private void btnNewForm_Click(object sender, EventArgs e)
+        {
+            txtbxFullName.Clear();
+            txtbxContactNo.Clear();
+            txtbxAddress.Clear();
+            txtbxDate.Clear();
+            txtbxQuestion1.Clear();
+            txtbxQuestion2.Clear();
+            txtbxQuestion3.Clear();
+            txtbxQuestion4.Clear();
+            txtbxQuestion5.Clear();
+            txtbxQuestion6.Clear();
+
         }
     }
 }

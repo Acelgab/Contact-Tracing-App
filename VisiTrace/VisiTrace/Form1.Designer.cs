@@ -53,6 +53,7 @@
             this.lblQuestion6 = new System.Windows.Forms.Label();
             this.txtbxQuestion6 = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnNewForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -304,12 +305,27 @@
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnNewForm
+            // 
+            this.btnNewForm.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNewForm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNewForm.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewForm.ForeColor = System.Drawing.Color.Snow;
+            this.btnNewForm.Location = new System.Drawing.Point(475, 335);
+            this.btnNewForm.Name = "btnNewForm";
+            this.btnNewForm.Size = new System.Drawing.Size(75, 24);
+            this.btnNewForm.TabIndex = 24;
+            this.btnNewForm.Text = "New Form";
+            this.btnNewForm.UseVisualStyleBackColor = false;
+            this.btnNewForm.Click += new System.EventHandler(this.btnNewForm_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(674, 382);
+            this.Controls.Add(this.btnNewForm);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtbxQuestion6);
             this.Controls.Add(this.lblQuestion6);
@@ -335,7 +351,7 @@
             this.Controls.Add(this.lblApp);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Wheat;
+            this.ForeColor = System.Drawing.Color.Snow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -376,6 +392,7 @@
         private System.Windows.Forms.Label lblQuestion6;
         private System.Windows.Forms.TextBox txtbxQuestion6;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnNewForm;
     }
 }
 
