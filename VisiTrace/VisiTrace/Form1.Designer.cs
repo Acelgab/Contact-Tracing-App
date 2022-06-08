@@ -60,9 +60,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(244, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(214, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(60, 67);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -74,7 +74,7 @@
             this.lblApp.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.lblApp.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApp.ForeColor = System.Drawing.Color.Navy;
-            this.lblApp.Location = new System.Drawing.Point(310, 12);
+            this.lblApp.Location = new System.Drawing.Point(271, 21);
             this.lblApp.Name = "lblApp";
             this.lblApp.Size = new System.Drawing.Size(120, 31);
             this.lblApp.TabIndex = 1;
@@ -86,13 +86,13 @@
             this.btnTraceMe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTraceMe.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraceMe.ForeColor = System.Drawing.Color.Snow;
-            this.btnTraceMe.Location = new System.Drawing.Point(316, 55);
+            this.btnTraceMe.Location = new System.Drawing.Point(276, 55);
             this.btnTraceMe.Name = "btnTraceMe";
-            this.btnTraceMe.Size = new System.Drawing.Size(85, 24);
+            this.btnTraceMe.Size = new System.Drawing.Size(74, 24);
             this.btnTraceMe.TabIndex = 2;
             this.btnTraceMe.Text = "Trace me";
             this.btnTraceMe.UseVisualStyleBackColor = false;
-            this.btnTraceMe.Click += new System.EventHandler(this.button1_Click);
+            this.btnTraceMe.Click += new System.EventHandler(this.btnTrace_Click);
             // 
             // lblFullName
             // 
@@ -100,7 +100,7 @@
             this.lblFullName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblFullName.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFullName.ForeColor = System.Drawing.Color.Navy;
-            this.lblFullName.Location = new System.Drawing.Point(25, 105);
+            this.lblFullName.Location = new System.Drawing.Point(22, 105);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(71, 15);
             this.lblFullName.TabIndex = 3;
@@ -109,9 +109,9 @@
             // 
             // txtbxFullName
             // 
-            this.txtbxFullName.Location = new System.Drawing.Point(92, 102);
+            this.txtbxFullName.Location = new System.Drawing.Point(93, 101);
             this.txtbxFullName.Name = "txtbxFullName";
-            this.txtbxFullName.Size = new System.Drawing.Size(271, 23);
+            this.txtbxFullName.Size = new System.Drawing.Size(238, 23);
             this.txtbxFullName.TabIndex = 4;
             // 
             // lblContactNo
@@ -120,7 +120,7 @@
             this.lblContactNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblContactNo.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactNo.ForeColor = System.Drawing.Color.Navy;
-            this.lblContactNo.Location = new System.Drawing.Point(385, 105);
+            this.lblContactNo.Location = new System.Drawing.Point(337, 105);
             this.lblContactNo.Name = "lblContactNo";
             this.lblContactNo.Size = new System.Drawing.Size(99, 15);
             this.lblContactNo.TabIndex = 5;
@@ -128,10 +128,11 @@
             // 
             // txtbxContactNo
             // 
-            this.txtbxContactNo.Location = new System.Drawing.Point(480, 102);
+            this.txtbxContactNo.Location = new System.Drawing.Point(433, 101);
             this.txtbxContactNo.Name = "txtbxContactNo";
-            this.txtbxContactNo.Size = new System.Drawing.Size(175, 23);
+            this.txtbxContactNo.Size = new System.Drawing.Size(154, 23);
             this.txtbxContactNo.TabIndex = 6;
+            this.txtbxContactNo.TextChanged += new System.EventHandler(this.txtbxContactNo_TextChanged);
             // 
             // lblAddress
             // 
@@ -139,7 +140,7 @@
             this.lblAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.Navy;
-            this.lblAddress.Location = new System.Drawing.Point(39, 143);
+            this.lblAddress.Location = new System.Drawing.Point(34, 143);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(51, 15);
             this.lblAddress.TabIndex = 7;
@@ -147,9 +148,9 @@
             // 
             // txtbxAddress
             // 
-            this.txtbxAddress.Location = new System.Drawing.Point(92, 140);
+            this.txtbxAddress.Location = new System.Drawing.Point(91, 139);
             this.txtbxAddress.Name = "txtbxAddress";
-            this.txtbxAddress.Size = new System.Drawing.Size(351, 23);
+            this.txtbxAddress.Size = new System.Drawing.Size(308, 23);
             this.txtbxAddress.TabIndex = 8;
             this.txtbxAddress.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -159,7 +160,7 @@
             this.lblDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblDate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.Navy;
-            this.lblDate.Location = new System.Drawing.Point(466, 143);
+            this.lblDate.Location = new System.Drawing.Point(408, 143);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(34, 15);
             this.lblDate.TabIndex = 9;
@@ -167,9 +168,9 @@
             // 
             // txtbxDate
             // 
-            this.txtbxDate.Location = new System.Drawing.Point(506, 140);
+            this.txtbxDate.Location = new System.Drawing.Point(443, 140);
             this.txtbxDate.Name = "txtbxDate";
-            this.txtbxDate.Size = new System.Drawing.Size(175, 23);
+            this.txtbxDate.Size = new System.Drawing.Size(154, 23);
             this.txtbxDate.TabIndex = 10;
             // 
             // lblQuestion1
@@ -178,7 +179,7 @@
             this.lblQuestion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion1.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion1.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion1.Location = new System.Drawing.Point(25, 176);
+            this.lblQuestion1.Location = new System.Drawing.Point(22, 176);
             this.lblQuestion1.Name = "lblQuestion1";
             this.lblQuestion1.Size = new System.Drawing.Size(267, 15);
             this.lblQuestion1.TabIndex = 11;
@@ -186,9 +187,9 @@
             // 
             // txtbxQuestion1
             // 
-            this.txtbxQuestion1.Location = new System.Drawing.Point(303, 173);
+            this.txtbxQuestion1.Location = new System.Drawing.Point(295, 172);
             this.txtbxQuestion1.Name = "txtbxQuestion1";
-            this.txtbxQuestion1.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion1.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion1.TabIndex = 12;
             // 
             // lblQuestion2
@@ -197,7 +198,7 @@
             this.lblQuestion2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion2.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion2.Location = new System.Drawing.Point(25, 206);
+            this.lblQuestion2.Location = new System.Drawing.Point(22, 206);
             this.lblQuestion2.Name = "lblQuestion2";
             this.lblQuestion2.Size = new System.Drawing.Size(272, 15);
             this.lblQuestion2.TabIndex = 13;
@@ -205,9 +206,9 @@
             // 
             // txtbxQuestion2
             // 
-            this.txtbxQuestion2.Location = new System.Drawing.Point(303, 202);
+            this.txtbxQuestion2.Location = new System.Drawing.Point(295, 202);
             this.txtbxQuestion2.Name = "txtbxQuestion2";
-            this.txtbxQuestion2.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion2.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion2.TabIndex = 14;
             // 
             // lblQuestion3
@@ -216,7 +217,7 @@
             this.lblQuestion3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion3.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion3.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion3.Location = new System.Drawing.Point(25, 236);
+            this.lblQuestion3.Location = new System.Drawing.Point(22, 236);
             this.lblQuestion3.Name = "lblQuestion3";
             this.lblQuestion3.Size = new System.Drawing.Size(71, 15);
             this.lblQuestion3.TabIndex = 15;
@@ -224,9 +225,9 @@
             // 
             // txtbxQuestion3
             // 
-            this.txtbxQuestion3.Location = new System.Drawing.Point(102, 233);
+            this.txtbxQuestion3.Location = new System.Drawing.Point(99, 233);
             this.txtbxQuestion3.Name = "txtbxQuestion3";
-            this.txtbxQuestion3.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion3.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion3.TabIndex = 16;
             // 
             // lblQuestion4
@@ -235,7 +236,7 @@
             this.lblQuestion4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion4.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion4.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion4.Location = new System.Drawing.Point(171, 236);
+            this.lblQuestion4.Location = new System.Drawing.Point(150, 236);
             this.lblQuestion4.Name = "lblQuestion4";
             this.lblQuestion4.Size = new System.Drawing.Size(63, 15);
             this.lblQuestion4.TabIndex = 17;
@@ -243,9 +244,9 @@
             // 
             // txtbxQuestion4
             // 
-            this.txtbxQuestion4.Location = new System.Drawing.Point(240, 233);
+            this.txtbxQuestion4.Location = new System.Drawing.Point(219, 233);
             this.txtbxQuestion4.Name = "txtbxQuestion4";
-            this.txtbxQuestion4.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion4.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion4.TabIndex = 18;
             // 
             // lblQuestion5
@@ -254,7 +255,7 @@
             this.lblQuestion5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion5.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion5.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion5.Location = new System.Drawing.Point(25, 265);
+            this.lblQuestion5.Location = new System.Drawing.Point(22, 265);
             this.lblQuestion5.Name = "lblQuestion5";
             this.lblQuestion5.Size = new System.Drawing.Size(422, 15);
             this.lblQuestion5.TabIndex = 19;
@@ -262,9 +263,9 @@
             // 
             // txtbxQuestion5
             // 
-            this.txtbxQuestion5.Location = new System.Drawing.Point(453, 262);
+            this.txtbxQuestion5.Location = new System.Drawing.Point(450, 261);
             this.txtbxQuestion5.Name = "txtbxQuestion5";
-            this.txtbxQuestion5.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion5.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion5.TabIndex = 20;
             // 
             // lblQuestion6
@@ -273,7 +274,7 @@
             this.lblQuestion6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblQuestion6.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion6.ForeColor = System.Drawing.Color.Navy;
-            this.lblQuestion6.Location = new System.Drawing.Point(25, 295);
+            this.lblQuestion6.Location = new System.Drawing.Point(22, 295);
             this.lblQuestion6.Name = "lblQuestion6";
             this.lblQuestion6.Size = new System.Drawing.Size(276, 15);
             this.lblQuestion6.TabIndex = 21;
@@ -282,18 +283,18 @@
             // 
             // txtbxQuestion6
             // 
-            this.txtbxQuestion6.Location = new System.Drawing.Point(311, 292);
+            this.txtbxQuestion6.Location = new System.Drawing.Point(304, 291);
             this.txtbxQuestion6.Name = "txtbxQuestion6";
-            this.txtbxQuestion6.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion6.Size = new System.Drawing.Size(41, 23);
             this.txtbxQuestion6.TabIndex = 22;
             this.txtbxQuestion6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(706, 371);
+            this.ClientSize = new System.Drawing.Size(674, 371);
             this.Controls.Add(this.txtbxQuestion6);
             this.Controls.Add(this.lblQuestion6);
             this.Controls.Add(this.txtbxQuestion5);
@@ -317,7 +318,7 @@
             this.Controls.Add(this.btnTraceMe);
             this.Controls.Add(this.lblApp);
             this.Controls.Add(this.pictureBox1);
-            this.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Wheat;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -48,12 +48,31 @@ namespace VisiTrace
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTrace_Click(object sender, EventArgs e)
         {
-
+            lblFullName.Show();
+            txtbxFullName.Show();
+            lblAddress.Show();
+            txtbxAddress.Show();
+            lblContactNo.Show();
+            txtbxContactNo.Show();
+            lblDate.Show();
+            txtbxDate.Show();
+            lblQuestion1.Show();
+            txtbxQuestion1.Show();
+            lblQuestion2.Show();
+            txtbxQuestion2.Show();
+            lblQuestion3.Show();
+            txtbxQuestion3.Show();
+            lblQuestion4.Show();
+            txtbxQuestion4.Show();
+            lblQuestion5.Show();
+            txtbxQuestion5.Show();
+            lblQuestion6.Show();
+            txtbxQuestion6.Show();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -72,6 +91,11 @@ namespace VisiTrace
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxContactNo_TextChanged(object sender, EventArgs e)
         {
 
         }
