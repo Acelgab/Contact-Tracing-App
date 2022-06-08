@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace VisiTrace
 {
@@ -98,6 +99,22 @@ namespace VisiTrace
         private void txtbxContactNo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StreamWriter save = new StreamWriter (@"C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace.txt");
+            save.WriteLine("Name: " + txtbxFullName.Text);
+            save.WriteLine("Contact Number: " + txtbxContactNo.Text);
+            save.WriteLine("Address: " + txtbxAddress.Text);
+            save.WriteLine("Date: " + txtbxDate.Text);
+            save.WriteLine("Fever? " + txtbxQuestion1.Text);
+            save.WriteLine("Cough? " + txtbxQuestion2.Text);
+            save.WriteLine("Sore Throat? " + txtbxQuestion3.Text);
+            save.WriteLine("Headache? " + txtbxQuestion4.Text);
+            save.WriteLine("COVID contact? " + txtbxQuestion5.Text);
+            save.WriteLine("Gone outside the country? " + txtbxQuestion6.Text);
+            save.Close();
         }
     }
 }

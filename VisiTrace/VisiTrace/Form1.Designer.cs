@@ -52,6 +52,7 @@
             this.txtbxQuestion5 = new System.Windows.Forms.TextBox();
             this.lblQuestion6 = new System.Windows.Forms.Label();
             this.txtbxQuestion6 = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,9 +61,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(214, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(214, -12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 67);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -289,12 +290,27 @@
             this.txtbxQuestion6.TabIndex = 22;
             this.txtbxQuestion6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Snow;
+            this.btnSave.Location = new System.Drawing.Point(556, 335);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 24);
+            this.btnSave.TabIndex = 23;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(674, 371);
+            this.ClientSize = new System.Drawing.Size(674, 382);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtbxQuestion6);
             this.Controls.Add(this.lblQuestion6);
             this.Controls.Add(this.txtbxQuestion5);
@@ -359,6 +375,7 @@
         private System.Windows.Forms.TextBox txtbxQuestion5;
         private System.Windows.Forms.Label lblQuestion6;
         private System.Windows.Forms.TextBox txtbxQuestion6;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 
