@@ -115,6 +115,7 @@ namespace VisiTrace
             save.WriteLine("Headache? " + txtbxQuestion4.Text);
             save.WriteLine("COVID contact? " + txtbxQuestion5.Text);
             save.WriteLine("Gone outside the country? " + txtbxQuestion6.Text);
+            save.WriteLine("");
             save.Close();
 
             MessageBox.Show("Saved!");
