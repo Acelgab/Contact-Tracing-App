@@ -35,7 +35,23 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.txtbxFullName = new System.Windows.Forms.TextBox();
             this.lblContactNo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbxContactNo = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.txtbxAddress = new System.Windows.Forms.TextBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.txtbxDate = new System.Windows.Forms.TextBox();
+            this.lblQuestion1 = new System.Windows.Forms.Label();
+            this.txtbxQuestion1 = new System.Windows.Forms.TextBox();
+            this.lblQuestion2 = new System.Windows.Forms.Label();
+            this.txtbxQuestion2 = new System.Windows.Forms.TextBox();
+            this.lblQuestion3 = new System.Windows.Forms.Label();
+            this.txtbxQuestion3 = new System.Windows.Forms.TextBox();
+            this.lblQuestion4 = new System.Windows.Forms.Label();
+            this.txtbxQuestion4 = new System.Windows.Forms.TextBox();
+            this.lblQuestion5 = new System.Windows.Forms.Label();
+            this.txtbxQuestion5 = new System.Windows.Forms.TextBox();
+            this.lblQuestion6 = new System.Windows.Forms.Label();
+            this.txtbxQuestion6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +60,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(244, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -58,7 +74,7 @@
             this.lblApp.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.lblApp.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApp.ForeColor = System.Drawing.Color.Navy;
-            this.lblApp.Location = new System.Drawing.Point(186, 12);
+            this.lblApp.Location = new System.Drawing.Point(310, 12);
             this.lblApp.Name = "lblApp";
             this.lblApp.Size = new System.Drawing.Size(120, 31);
             this.lblApp.TabIndex = 1;
@@ -70,7 +86,7 @@
             this.btnTraceMe.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTraceMe.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraceMe.ForeColor = System.Drawing.Color.Snow;
-            this.btnTraceMe.Location = new System.Drawing.Point(192, 55);
+            this.btnTraceMe.Location = new System.Drawing.Point(316, 55);
             this.btnTraceMe.Name = "btnTraceMe";
             this.btnTraceMe.Size = new System.Drawing.Size(85, 24);
             this.btnTraceMe.TabIndex = 2;
@@ -95,7 +111,7 @@
             // 
             this.txtbxFullName.Location = new System.Drawing.Point(92, 102);
             this.txtbxFullName.Name = "txtbxFullName";
-            this.txtbxFullName.Size = new System.Drawing.Size(264, 23);
+            this.txtbxFullName.Size = new System.Drawing.Size(271, 23);
             this.txtbxFullName.TabIndex = 4;
             // 
             // lblContactNo
@@ -110,20 +126,191 @@
             this.lblContactNo.TabIndex = 5;
             this.lblContactNo.Text = "Contact Number: \r\n";
             // 
-            // textBox1
+            // txtbxContactNo
             // 
-            this.textBox1.Location = new System.Drawing.Point(480, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 23);
-            this.textBox1.TabIndex = 6;
+            this.txtbxContactNo.Location = new System.Drawing.Point(480, 102);
+            this.txtbxContactNo.Name = "txtbxContactNo";
+            this.txtbxContactNo.Size = new System.Drawing.Size(175, 23);
+            this.txtbxContactNo.TabIndex = 6;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Navy;
+            this.lblAddress.Location = new System.Drawing.Point(39, 143);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(51, 15);
+            this.lblAddress.TabIndex = 7;
+            this.lblAddress.Text = "Address:";
+            // 
+            // txtbxAddress
+            // 
+            this.txtbxAddress.Location = new System.Drawing.Point(92, 140);
+            this.txtbxAddress.Name = "txtbxAddress";
+            this.txtbxAddress.Size = new System.Drawing.Size(351, 23);
+            this.txtbxAddress.TabIndex = 8;
+            this.txtbxAddress.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.Navy;
+            this.lblDate.Location = new System.Drawing.Point(466, 143);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(34, 15);
+            this.lblDate.TabIndex = 9;
+            this.lblDate.Text = "Date:";
+            // 
+            // txtbxDate
+            // 
+            this.txtbxDate.Location = new System.Drawing.Point(506, 140);
+            this.txtbxDate.Name = "txtbxDate";
+            this.txtbxDate.Size = new System.Drawing.Size(175, 23);
+            this.txtbxDate.TabIndex = 10;
+            // 
+            // lblQuestion1
+            // 
+            this.lblQuestion1.AutoSize = true;
+            this.lblQuestion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion1.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion1.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion1.Location = new System.Drawing.Point(25, 176);
+            this.lblQuestion1.Name = "lblQuestion1";
+            this.lblQuestion1.Size = new System.Drawing.Size(267, 15);
+            this.lblQuestion1.TabIndex = 11;
+            this.lblQuestion1.Text = "Have you experienced a fever in the last 14 days?";
+            // 
+            // txtbxQuestion1
+            // 
+            this.txtbxQuestion1.Location = new System.Drawing.Point(303, 173);
+            this.txtbxQuestion1.Name = "txtbxQuestion1";
+            this.txtbxQuestion1.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion1.TabIndex = 12;
+            // 
+            // lblQuestion2
+            // 
+            this.lblQuestion2.AutoSize = true;
+            this.lblQuestion2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion2.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion2.Location = new System.Drawing.Point(25, 206);
+            this.lblQuestion2.Name = "lblQuestion2";
+            this.lblQuestion2.Size = new System.Drawing.Size(272, 15);
+            this.lblQuestion2.TabIndex = 13;
+            this.lblQuestion2.Text = "Have you experienced a cough in the last 14 days?";
+            // 
+            // txtbxQuestion2
+            // 
+            this.txtbxQuestion2.Location = new System.Drawing.Point(303, 202);
+            this.txtbxQuestion2.Name = "txtbxQuestion2";
+            this.txtbxQuestion2.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion2.TabIndex = 14;
+            // 
+            // lblQuestion3
+            // 
+            this.lblQuestion3.AutoSize = true;
+            this.lblQuestion3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion3.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion3.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion3.Location = new System.Drawing.Point(25, 236);
+            this.lblQuestion3.Name = "lblQuestion3";
+            this.lblQuestion3.Size = new System.Drawing.Size(71, 15);
+            this.lblQuestion3.TabIndex = 15;
+            this.lblQuestion3.Text = "Sore throat?";
+            // 
+            // txtbxQuestion3
+            // 
+            this.txtbxQuestion3.Location = new System.Drawing.Point(102, 233);
+            this.txtbxQuestion3.Name = "txtbxQuestion3";
+            this.txtbxQuestion3.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion3.TabIndex = 16;
+            // 
+            // lblQuestion4
+            // 
+            this.lblQuestion4.AutoSize = true;
+            this.lblQuestion4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion4.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion4.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion4.Location = new System.Drawing.Point(171, 236);
+            this.lblQuestion4.Name = "lblQuestion4";
+            this.lblQuestion4.Size = new System.Drawing.Size(63, 15);
+            this.lblQuestion4.TabIndex = 17;
+            this.lblQuestion4.Text = "Headache?";
+            // 
+            // txtbxQuestion4
+            // 
+            this.txtbxQuestion4.Location = new System.Drawing.Point(240, 233);
+            this.txtbxQuestion4.Name = "txtbxQuestion4";
+            this.txtbxQuestion4.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion4.TabIndex = 18;
+            // 
+            // lblQuestion5
+            // 
+            this.lblQuestion5.AutoSize = true;
+            this.lblQuestion5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion5.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion5.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion5.Location = new System.Drawing.Point(25, 265);
+            this.lblQuestion5.Name = "lblQuestion5";
+            this.lblQuestion5.Size = new System.Drawing.Size(422, 15);
+            this.lblQuestion5.TabIndex = 19;
+            this.lblQuestion5.Text = "Did you have any history of contact with a COVID patient in the last 14 days?";
+            // 
+            // txtbxQuestion5
+            // 
+            this.txtbxQuestion5.Location = new System.Drawing.Point(453, 262);
+            this.txtbxQuestion5.Name = "txtbxQuestion5";
+            this.txtbxQuestion5.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion5.TabIndex = 20;
+            // 
+            // lblQuestion6
+            // 
+            this.lblQuestion6.AutoSize = true;
+            this.lblQuestion6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblQuestion6.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion6.ForeColor = System.Drawing.Color.Navy;
+            this.lblQuestion6.Location = new System.Drawing.Point(25, 295);
+            this.lblQuestion6.Name = "lblQuestion6";
+            this.lblQuestion6.Size = new System.Drawing.Size(276, 15);
+            this.lblQuestion6.TabIndex = 21;
+            this.lblQuestion6.Text = "Did you go outside the country in the last 14 days?";
+            this.lblQuestion6.Click += new System.EventHandler(this.lblQuestion6_Click);
+            // 
+            // txtbxQuestion6
+            // 
+            this.txtbxQuestion6.Location = new System.Drawing.Point(311, 292);
+            this.txtbxQuestion6.Name = "txtbxQuestion6";
+            this.txtbxQuestion6.Size = new System.Drawing.Size(46, 23);
+            this.txtbxQuestion6.TabIndex = 22;
+            this.txtbxQuestion6.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(706, 320);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(706, 371);
+            this.Controls.Add(this.txtbxQuestion6);
+            this.Controls.Add(this.lblQuestion6);
+            this.Controls.Add(this.txtbxQuestion5);
+            this.Controls.Add(this.lblQuestion5);
+            this.Controls.Add(this.txtbxQuestion4);
+            this.Controls.Add(this.lblQuestion4);
+            this.Controls.Add(this.txtbxQuestion3);
+            this.Controls.Add(this.lblQuestion3);
+            this.Controls.Add(this.txtbxQuestion2);
+            this.Controls.Add(this.lblQuestion2);
+            this.Controls.Add(this.txtbxQuestion1);
+            this.Controls.Add(this.lblQuestion1);
+            this.Controls.Add(this.txtbxDate);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.txtbxAddress);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.txtbxContactNo);
             this.Controls.Add(this.lblContactNo);
             this.Controls.Add(this.txtbxFullName);
             this.Controls.Add(this.lblFullName);
@@ -154,7 +341,23 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.TextBox txtbxFullName;
         private System.Windows.Forms.Label lblContactNo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbxContactNo;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.TextBox txtbxAddress;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.TextBox txtbxDate;
+        private System.Windows.Forms.Label lblQuestion1;
+        private System.Windows.Forms.TextBox txtbxQuestion1;
+        private System.Windows.Forms.Label lblQuestion2;
+        private System.Windows.Forms.TextBox txtbxQuestion2;
+        private System.Windows.Forms.Label lblQuestion3;
+        private System.Windows.Forms.TextBox txtbxQuestion3;
+        private System.Windows.Forms.Label lblQuestion4;
+        private System.Windows.Forms.TextBox txtbxQuestion4;
+        private System.Windows.Forms.Label lblQuestion5;
+        private System.Windows.Forms.TextBox txtbxQuestion5;
+        private System.Windows.Forms.Label lblQuestion6;
+        private System.Windows.Forms.TextBox txtbxQuestion6;
     }
 }
 

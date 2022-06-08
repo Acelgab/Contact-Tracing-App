@@ -21,6 +21,28 @@ namespace VisiTrace
         {
             lblFullName.Hide();
             txtbxFullName.Hide();
+            lblAddress.Hide();
+            txtbxAddress.Hide();
+            lblContactNo.Hide();
+            txtbxContactNo.Hide();
+            lblDate.Hide();
+            txtbxDate.Hide();
+            lblQuestion1.Hide();
+            txtbxQuestion1.Hide();
+            lblQuestion2.Hide();
+            txtbxQuestion2.Hide();
+            lblQuestion3.Hide();
+            txtbxQuestion3.Hide();
+            lblQuestion4.Hide();
+            txtbxQuestion4.Hide();
+            lblQuestion5.Hide();
+            txtbxQuestion5.Hide();
+            lblQuestion6.Hide();
+            txtbxQuestion6.Hide();
+            
+
+
+
 
         }
 
@@ -35,6 +57,21 @@ namespace VisiTrace
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblQuestion6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
