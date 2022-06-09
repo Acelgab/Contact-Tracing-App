@@ -103,7 +103,7 @@ namespace VisiTrace
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter save = File.AppendText(@"C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace.txt");
+            StreamWriter save = File.AppendText(@"VisiTrace.txt");
             
             save.WriteLine("Name: " + txtbxFullName.Text);
             save.WriteLine("Contact Number: " + txtbxContactNo.Text);

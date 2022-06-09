@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VisiTrace",
+    "\\VisiTrace\\VisiTrace"
   ],
-  "SelectedNode": "\\VisiTrace.sln",
+  "SelectedNode": "\\VisiTrace\\VisiTrace\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
