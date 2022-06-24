@@ -31,3 +31,25 @@ Headache?
 COVID contact? 
 Gone outside the country? 
 
+Name: Jack N. Jill
+Contact Number: 09211111111
+Address: Up the Hill
+Date: June 09, 2022
+Fever? No
+Cough? Yes
+Sore Throat? No
+Headache? Yes
+COVID contact? YEs
+Gone outside the country? No
+
+Name: Jack N. Jill
+Contact Number: 09111111111
+Address: Up the Hill
+Date: June 06,2022
+Fever? Yes
+Cough? No
+Sore Throat? Yes
+Headache? No
+COVID contact? Yes
+Gone outside the country? No
+

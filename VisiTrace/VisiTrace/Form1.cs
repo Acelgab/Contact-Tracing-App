@@ -42,6 +42,7 @@ namespace VisiTrace
             txtbxQuestion6.Hide();
             btnSave.Hide();
             btnNewForm.Hide();
+            RecordList.Hide();
   
         }
 
@@ -134,6 +135,17 @@ namespace VisiTrace
             txtbxQuestion4.Clear();
             txtbxQuestion5.Clear();
             txtbxQuestion6.Clear();
+
+        }
+
+       
+
+        private void btnRecords_Click(object sender, EventArgs e)
+        {
+            RecordList.Show();
+        }
+        private void RecordList_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

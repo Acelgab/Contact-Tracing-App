@@ -54,6 +54,8 @@
             this.txtbxQuestion6 = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNewForm = new System.Windows.Forms.Button();
+            this.RecordList = new System.Windows.Forms.ListBox();
+            this.btnRecords = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -319,12 +321,39 @@
             this.btnNewForm.UseVisualStyleBackColor = false;
             this.btnNewForm.Click += new System.EventHandler(this.btnNewForm_Click);
             // 
+            // RecordList
+            // 
+            this.RecordList.BackColor = System.Drawing.Color.MidnightBlue;
+            this.RecordList.FormattingEnabled = true;
+            this.RecordList.ItemHeight = 16;
+            this.RecordList.Location = new System.Drawing.Point(511, 130);
+            this.RecordList.Name = "RecordList";
+            this.RecordList.Size = new System.Drawing.Size(120, 84);
+            this.RecordList.TabIndex = 26;
+            this.RecordList.SelectedIndexChanged += new System.EventHandler(this.RecordList_SelectedIndexChanged);
+            // 
+            // btnRecords
+            // 
+            this.btnRecords.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRecords.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecords.ForeColor = System.Drawing.Color.Snow;
+            this.btnRecords.Location = new System.Drawing.Point(362, 55);
+            this.btnRecords.Name = "btnRecords";
+            this.btnRecords.Size = new System.Drawing.Size(74, 24);
+            this.btnRecords.TabIndex = 27;
+            this.btnRecords.Text = "Records";
+            this.btnRecords.UseVisualStyleBackColor = false;
+            this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(674, 382);
+            this.ClientSize = new System.Drawing.Size(661, 382);
+            this.Controls.Add(this.btnRecords);
+            this.Controls.Add(this.RecordList);
             this.Controls.Add(this.btnNewForm);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtbxQuestion6);
@@ -393,6 +422,8 @@
         private System.Windows.Forms.TextBox txtbxQuestion6;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNewForm;
+        private System.Windows.Forms.ListBox RecordList;
+        private System.Windows.Forms.Button btnRecords;
     }
 }
 
