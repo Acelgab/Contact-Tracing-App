@@ -167,6 +167,14 @@ namespace VisiTrace
             btnSave.Hide();
             btnNewForm.Hide();
 
+            StreamReader ReadFolder = new StreamReader(Application.StartupPath + "\\Records\\");
+            while (!ReadFolder.EndOfStream)
+            {
+                string file = 
+                RecordList.Items.Add(line);
+
+            }
+
 
         }
 

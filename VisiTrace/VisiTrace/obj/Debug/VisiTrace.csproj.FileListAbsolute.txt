@@ -20,3 +20,4 @@ C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiT
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.csproj.CoreCompileInputs.cache
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.exe
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.pdb
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.Records.resources

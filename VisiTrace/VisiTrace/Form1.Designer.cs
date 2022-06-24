@@ -56,9 +56,9 @@
             this.btnNewForm = new System.Windows.Forms.Button();
             this.btnRecords = new System.Windows.Forms.Button();
             this.RecordList = new System.Windows.Forms.ListBox();
+            this.lblSpecifyDate = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtbxSearch = new System.Windows.Forms.TextBox();
-            this.lblSpecifyDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -180,7 +180,6 @@
             this.txtbxDate.Name = "txtbxDate";
             this.txtbxDate.Size = new System.Drawing.Size(154, 23);
             this.txtbxDate.TabIndex = 10;
-            this.txtbxDate.Text = "Month Day, Year";
             // 
             // lblQuestion1
             // 
@@ -345,11 +344,23 @@
             this.RecordList.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.RecordList.FormattingEnabled = true;
             this.RecordList.ItemHeight = 16;
-            this.RecordList.Location = new System.Drawing.Point(12, 82);
+            this.RecordList.Location = new System.Drawing.Point(25, 161);
             this.RecordList.Name = "RecordList";
-            this.RecordList.Size = new System.Drawing.Size(625, 228);
+            this.RecordList.Size = new System.Drawing.Size(606, 164);
             this.RecordList.TabIndex = 28;
             this.RecordList.SelectedIndexChanged += new System.EventHandler(this.RecordListtry_SelectedIndexChanged);
+            // 
+            // lblSpecifyDate
+            // 
+            this.lblSpecifyDate.AutoSize = true;
+            this.lblSpecifyDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblSpecifyDate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpecifyDate.ForeColor = System.Drawing.Color.Navy;
+            this.lblSpecifyDate.Location = new System.Drawing.Point(156, 134);
+            this.lblSpecifyDate.Name = "lblSpecifyDate";
+            this.lblSpecifyDate.Size = new System.Drawing.Size(76, 15);
+            this.lblSpecifyDate.TabIndex = 31;
+            this.lblSpecifyDate.Text = "Specify Date:\r\n";
             // 
             // btnSearch
             // 
@@ -357,7 +368,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Snow;
-            this.btnSearch.Location = new System.Drawing.Point(389, 96);
+            this.btnSearch.Location = new System.Drawing.Point(450, 131);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(74, 24);
             this.btnSearch.TabIndex = 29;
@@ -367,23 +378,11 @@
             // txtbxSearch
             // 
             this.txtbxSearch.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtbxSearch.Location = new System.Drawing.Point(171, 96);
+            this.txtbxSearch.Location = new System.Drawing.Point(238, 130);
             this.txtbxSearch.Name = "txtbxSearch";
             this.txtbxSearch.Size = new System.Drawing.Size(198, 23);
             this.txtbxSearch.TabIndex = 30;
             this.txtbxSearch.Text = "Month Day, Year";
-            // 
-            // lblSpecifyDate
-            // 
-            this.lblSpecifyDate.AutoSize = true;
-            this.lblSpecifyDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSpecifyDate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpecifyDate.ForeColor = System.Drawing.Color.Navy;
-            this.lblSpecifyDate.Location = new System.Drawing.Point(88, 100);
-            this.lblSpecifyDate.Name = "lblSpecifyDate";
-            this.lblSpecifyDate.Size = new System.Drawing.Size(76, 15);
-            this.lblSpecifyDate.TabIndex = 31;
-            this.lblSpecifyDate.Text = "Specify Date:\r\n";
             // 
             // Form1
             // 
@@ -466,9 +465,9 @@
         private System.Windows.Forms.Button btnNewForm;
         private System.Windows.Forms.Button btnRecords;
         private System.Windows.Forms.ListBox RecordList;
+        private System.Windows.Forms.Label lblSpecifyDate;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtbxSearch;
-        private System.Windows.Forms.Label lblSpecifyDate;
     }
 }
 
