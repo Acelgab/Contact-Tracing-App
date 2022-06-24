@@ -42,7 +42,7 @@ namespace VisiTrace
             txtbxQuestion6.Hide();
             btnSave.Hide();
             btnNewForm.Hide();
-            RecordListtry.Hide();
+            RecordList.Hide();
 
         }
 
@@ -75,6 +75,7 @@ namespace VisiTrace
             txtbxQuestion6.Show();
             btnNewForm.Show();
             btnSave.Show();
+            RecordList.Hide();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -142,8 +143,31 @@ namespace VisiTrace
 
         private void btnRecords_Click(object sender, EventArgs e)
         {
+            RecordList.Show();
+            lblFullName.Hide();
+            txtbxFullName.Hide();
+            lblAddress.Hide();
+            txtbxAddress.Hide();
+            lblContactNo.Hide();
+            txtbxContactNo.Hide();
+            lblDate.Hide();
+            txtbxDate.Hide();
+            lblQuestion1.Hide();
+            txtbxQuestion1.Hide();
+            lblQuestion2.Hide();
+            txtbxQuestion2.Hide();
+            lblQuestion3.Hide();
+            txtbxQuestion3.Hide();
+            lblQuestion4.Hide();
+            txtbxQuestion4.Hide();
+            lblQuestion5.Hide();
+            txtbxQuestion5.Hide();
+            lblQuestion6.Hide();
+            txtbxQuestion6.Hide();
+            btnSave.Hide();
+            btnNewForm.Hide();
 
-     
+
         }
 
         private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
