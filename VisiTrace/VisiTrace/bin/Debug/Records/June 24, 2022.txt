@@ -1,0 +1,11 @@
+Name: 
+Contact Number: 
+Address: 
+Date: June 24, 2022
+Fever? 
+Cough? 
+Sore Throat? 
+Headache? 
+COVID contact? 
+Gone outside the country? 
+

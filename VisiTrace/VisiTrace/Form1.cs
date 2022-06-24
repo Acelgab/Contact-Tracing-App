@@ -42,6 +42,7 @@ namespace VisiTrace
             txtbxQuestion6.Hide();
             btnSave.Hide();
             btnNewForm.Hide();
+            RecordListtry.Hide();
 
         }
 
@@ -103,7 +104,7 @@ namespace VisiTrace
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter save = File.AppendText(@"VisiTrace.txt");
+            StreamWriter save = File.AppendText(Application.StartupPath +"\\Records\\"+txtbxDate.Text+".txt");
 
             save.WriteLine("Name: " + txtbxFullName.Text);
             save.WriteLine("Contact Number: " + txtbxContactNo.Text);
@@ -141,11 +142,13 @@ namespace VisiTrace
 
         private void btnRecords_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(@"VisiTrace.txt");
-            string line = reader.ReadLine();    
+
+     
         }
 
- 
+        private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

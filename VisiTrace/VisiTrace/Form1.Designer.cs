@@ -55,6 +55,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNewForm = new System.Windows.Forms.Button();
             this.btnRecords = new System.Windows.Forms.Button();
+            this.RecordListtry = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -334,12 +335,23 @@
             this.btnRecords.UseVisualStyleBackColor = false;
             this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
             // 
+            // RecordListtry
+            // 
+            this.RecordListtry.FormattingEnabled = true;
+            this.RecordListtry.ItemHeight = 16;
+            this.RecordListtry.Location = new System.Drawing.Point(12, 85);
+            this.RecordListtry.Name = "RecordListtry";
+            this.RecordListtry.Size = new System.Drawing.Size(324, 244);
+            this.RecordListtry.TabIndex = 28;
+            this.RecordListtry.SelectedIndexChanged += new System.EventHandler(this.RecordListtry_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(649, 382);
+            this.Controls.Add(this.RecordListtry);
             this.Controls.Add(this.btnRecords);
             this.Controls.Add(this.btnNewForm);
             this.Controls.Add(this.btnSave);
@@ -410,6 +422,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNewForm;
         private System.Windows.Forms.Button btnRecords;
+        private System.Windows.Forms.ListBox RecordListtry;
     }
 }
 
