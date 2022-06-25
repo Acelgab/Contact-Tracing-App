@@ -122,6 +122,8 @@ namespace VisiTrace
 
             MessageBox.Show("Saved!");
 
+            RecordList.Items.Add(txtbxFullName.Text);
+
         }
 
         private void btnNewForm_Click(object sender, EventArgs e)
@@ -167,19 +169,13 @@ namespace VisiTrace
             btnSave.Hide();
             btnNewForm.Hide();
 
-            StreamReader ReadFolder = new StreamReader(Application.StartupPath + "\\Records\\");
-            while (!ReadFolder.EndOfStream)
-            {
-                string file = 
-                RecordList.Items.Add(line);
-
-            }
-
+     
 
         }
 
         private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
 
         }
     }
