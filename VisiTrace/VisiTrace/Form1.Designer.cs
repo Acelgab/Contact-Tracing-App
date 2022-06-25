@@ -432,6 +432,7 @@
             // record2
             // 
             this.record2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.record2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.record2.Location = new System.Drawing.Point(196, 173);
             this.record2.Name = "record2";
             this.record2.Size = new System.Drawing.Size(429, 148);

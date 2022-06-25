@@ -153,6 +153,7 @@ namespace VisiTrace
             lblMonth.Hide();
             lblDay.Hide();
             btnPastRegist.Show();
+            record2.Show();
           
         }
 
@@ -209,8 +210,8 @@ namespace VisiTrace
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader(Application.StartupPath + "\\Records\\" + txtbxDate.Text + ".txt");
-            RecordList.Text = reader.ReadToEnd();
+            StreamReader reader = new StreamReader(Application.StartupPath + "\\Records\\" + txtbxSearch.Text + ".txt");
+            record2.Text = reader.ReadToEnd();
             reader.Close();
         }
 
