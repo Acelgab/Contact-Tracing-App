@@ -43,6 +43,9 @@ namespace VisiTrace
             btnSave.Hide();
             btnNewForm.Hide();
             RecordList.Hide();
+            lblSpecifyDate.Hide();
+            txtbxSearch.Hide();
+            btnSearch.Hide();
 
         }
 
@@ -76,6 +79,9 @@ namespace VisiTrace
             btnNewForm.Show();
             btnSave.Show();
             RecordList.Hide();
+            lblSpecifyDate.Hide();
+            txtbxSearch.Hide();
+            btnSearch.Hide();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -123,7 +129,10 @@ namespace VisiTrace
             MessageBox.Show("Saved!");
 
             RecordList.Items.Add(txtbxFullName.Text);
-
+            RecordList.Items.Add(txtbxAddress.Text);
+            RecordList.Items.Add(txtbxDate.Text);
+            RecordList.Items.Add(txtbxContactNo.Text);
+            RecordList.Items.Add("");
         }
 
         private void btnNewForm_Click(object sender, EventArgs e)
@@ -146,6 +155,9 @@ namespace VisiTrace
         private void btnRecords_Click(object sender, EventArgs e)
         {
             RecordList.Show();
+            lblSpecifyDate.Show();
+            txtbxSearch.Show();
+            btnSearch.Show();
             lblFullName.Hide();
             txtbxFullName.Hide();
             lblAddress.Hide();

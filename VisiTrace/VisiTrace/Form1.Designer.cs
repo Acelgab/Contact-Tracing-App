@@ -341,12 +341,13 @@
             // 
             // RecordList
             // 
-            this.RecordList.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.RecordList.BackColor = System.Drawing.Color.MidnightBlue;
+            this.RecordList.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.RecordList.FormattingEnabled = true;
             this.RecordList.ItemHeight = 16;
-            this.RecordList.Location = new System.Drawing.Point(25, 161);
+            this.RecordList.Location = new System.Drawing.Point(25, 169);
             this.RecordList.Name = "RecordList";
-            this.RecordList.Size = new System.Drawing.Size(606, 164);
+            this.RecordList.Size = new System.Drawing.Size(606, 148);
             this.RecordList.TabIndex = 28;
             this.RecordList.SelectedIndexChanged += new System.EventHandler(this.RecordListtry_SelectedIndexChanged);
             // 
