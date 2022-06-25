@@ -46,7 +46,9 @@ namespace VisiTrace
             lblSpecifyDate.Hide();
             txtbxSearch.Hide();
             btnSearch.Hide();
-
+            lblMonth.Hide();
+            lblDay.Hide();
+            lblYear.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -82,6 +84,9 @@ namespace VisiTrace
             lblSpecifyDate.Hide();
             txtbxSearch.Hide();
             btnSearch.Hide();
+            lblMonth.Show();
+            lblDay.Show();
+            lblYear.Show();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -180,14 +185,20 @@ namespace VisiTrace
             txtbxQuestion6.Hide();
             btnSave.Hide();
             btnNewForm.Hide();
-
-     
+            lblYear.Hide();
+            lblMonth.Hide();
+            lblDay.Hide();
 
         }
 
         private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

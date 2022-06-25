@@ -59,6 +59,9 @@
             this.lblSpecifyDate = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtbxSearch = new System.Windows.Forms.TextBox();
+            this.lblYear = new System.Windows.Forms.Label();
+            this.lblDay = new System.Windows.Forms.Label();
+            this.lblMonth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,7 +178,7 @@
             // 
             // txtbxDate
             // 
-            this.txtbxDate.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtbxDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtbxDate.Location = new System.Drawing.Point(443, 140);
             this.txtbxDate.Name = "txtbxDate";
             this.txtbxDate.Size = new System.Drawing.Size(154, 23);
@@ -385,12 +388,53 @@
             this.txtbxSearch.TabIndex = 30;
             this.txtbxSearch.Text = "Month Day, Year";
             // 
+            // lblYear
+            // 
+            this.lblYear.AutoSize = true;
+            this.lblYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblYear.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYear.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblYear.Location = new System.Drawing.Point(553, 166);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(32, 15);
+            this.lblYear.TabIndex = 32;
+            this.lblYear.Text = "Year";
+            // 
+            // lblDay
+            // 
+            this.lblDay.AutoSize = true;
+            this.lblDay.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.lblDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDay.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblDay.Location = new System.Drawing.Point(507, 166);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(28, 15);
+            this.lblDay.TabIndex = 33;
+            this.lblDay.Text = "Day";
+            // 
+            // lblMonth
+            // 
+            this.lblMonth.AutoSize = true;
+            this.lblMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMonth.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblMonth.Location = new System.Drawing.Point(447, 166);
+            this.lblMonth.Name = "lblMonth";
+            this.lblMonth.Size = new System.Drawing.Size(42, 15);
+            this.lblMonth.TabIndex = 34;
+            this.lblMonth.Text = "Month";
+            this.lblMonth.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(649, 382);
+            this.Controls.Add(this.lblMonth);
+            this.Controls.Add(this.lblDay);
+            this.Controls.Add(this.lblYear);
             this.Controls.Add(this.lblSpecifyDate);
             this.Controls.Add(this.txtbxSearch);
             this.Controls.Add(this.btnSearch);
@@ -469,6 +513,9 @@
         private System.Windows.Forms.Label lblSpecifyDate;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtbxSearch;
+        private System.Windows.Forms.Label lblYear;
+        private System.Windows.Forms.Label lblDay;
+        private System.Windows.Forms.Label lblMonth;
     }
 }
 
