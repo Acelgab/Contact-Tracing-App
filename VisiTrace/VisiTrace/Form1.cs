@@ -113,50 +113,16 @@ namespace VisiTrace
         {
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            StreamWriter save = File.AppendText(Application.StartupPath +"\\Records\\"+txtbxDate.Text+".txt");
-
-            save.WriteLine("Name: " + txtbxFullName.Text);
-            save.WriteLine("Contact Number: " + txtbxContactNo.Text);
-            save.WriteLine("Address: " + txtbxAddress.Text);
-            save.WriteLine("Date: " + txtbxDate.Text);
-            save.WriteLine("Fever? " + txtbxQuestion1.Text);
-            save.WriteLine("Cough? " + txtbxQuestion2.Text);
-            save.WriteLine("Sore Throat? " + txtbxQuestion3.Text);
-            save.WriteLine("Headache? " + txtbxQuestion4.Text);
-            save.WriteLine("COVID contact? " + txtbxQuestion5.Text);
-            save.WriteLine("Gone outside the country? " + txtbxQuestion6.Text);
-            save.WriteLine("");
-            save.Close();
-
-            MessageBox.Show("Saved!");
-
-            RecordList.Items.Add(txtbxFullName.Text);
-            RecordList.Items.Add(txtbxAddress.Text);
-            RecordList.Items.Add(txtbxDate.Text);
-            RecordList.Items.Add(txtbxContactNo.Text);
-            RecordList.Items.Add("");
+            StreamReader record = new StreamReader(Application.StartupPath + "\\Records\\" + "June 24, 2022.txt");
+            StreamReader list = new StreamReader(Application.StartupPath + "\\Records\\" + "June 25, 2022.txt");
+            String line = record.ReadLine();
+            RecordList.Items.Add(record.ReadToEnd());
+            RecordList.Text = list.ReadToEnd();
+            record.Close();
+            list.Close();
         }
-
-        private void btnNewForm_Click(object sender, EventArgs e)
-        {
-            txtbxFullName.Clear();
-            txtbxContactNo.Clear();
-            txtbxAddress.Clear();
-            txtbxDate.Clear();
-            txtbxQuestion1.Clear();
-            txtbxQuestion2.Clear();
-            txtbxQuestion3.Clear();
-            txtbxQuestion4.Clear();
-            txtbxQuestion5.Clear();
-            txtbxQuestion6.Clear();
-
-        }
-
-
-
         private void btnRecords_Click(object sender, EventArgs e)
         {
             RecordList.Show();
@@ -189,17 +155,66 @@ namespace VisiTrace
             lblMonth.Hide();
             lblDay.Hide();
 
+          
         }
 
-        private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            
+            StreamWriter save = File.AppendText(Application.StartupPath +"\\Records\\"+txtbxDate.Text+".txt");
+
+            save.WriteLine("Name: " + txtbxFullName.Text);
+            save.WriteLine("Contact Number: " + txtbxContactNo.Text);
+            save.WriteLine("Address: " + txtbxAddress.Text);
+            save.WriteLine("Date: " + txtbxDate.Text);
+            save.WriteLine("Fever? " + txtbxQuestion1.Text);
+            save.WriteLine("Cough? " + txtbxQuestion2.Text);
+            save.WriteLine("Sore Throat? " + txtbxQuestion3.Text);
+            save.WriteLine("Headache? " + txtbxQuestion4.Text);
+            save.WriteLine("COVID contact? " + txtbxQuestion5.Text);
+            save.WriteLine("Gone outside the country? " + txtbxQuestion6.Text);
+            save.WriteLine("");
+            save.Close();
+
+            MessageBox.Show("Saved!");
+            RecordList.Items.Add(txtbxFullName.Text);
+            RecordList.Items.Add(txtbxAddress.Text);
+            RecordList.Items.Add(txtbxDate.Text);
+            RecordList.Items.Add(txtbxContactNo.Text);
+            RecordList.Items.Add("");
+        }
+
+        private void btnNewForm_Click(object sender, EventArgs e)
+        {
+            txtbxFullName.Clear();
+            txtbxContactNo.Clear();
+            txtbxAddress.Clear();
+            txtbxDate.Clear();
+            txtbxQuestion1.Clear();
+            txtbxQuestion2.Clear();
+            txtbxQuestion3.Clear();
+            txtbxQuestion4.Clear();
+            txtbxQuestion5.Clear();
+            txtbxQuestion6.Clear();
 
         }
+
+
+
+       
+       
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            StreamReader reader = new StreamReader(Application.StartupPath + "\\Records\\" + txtbxDate.Text + ".txt");
+            RecordList.Text = reader.ReadToEnd();
+            reader.Close();
+        }
     }
 }
+       

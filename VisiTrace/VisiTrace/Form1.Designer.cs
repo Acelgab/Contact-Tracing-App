@@ -119,7 +119,7 @@
             // 
             // txtbxFullName
             // 
-            this.txtbxFullName.Location = new System.Drawing.Point(93, 101);
+            this.txtbxFullName.Location = new System.Drawing.Point(91, 97);
             this.txtbxFullName.Name = "txtbxFullName";
             this.txtbxFullName.Size = new System.Drawing.Size(238, 23);
             this.txtbxFullName.TabIndex = 4;
@@ -378,6 +378,7 @@
             this.btnSearch.TabIndex = 29;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtbxSearch
             // 
