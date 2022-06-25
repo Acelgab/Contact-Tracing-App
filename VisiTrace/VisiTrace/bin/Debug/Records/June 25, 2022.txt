@@ -20,3 +20,14 @@ Headache?
 COVID contact? 
 Gone outside the country? 
 
+Name: Acel Gabrielle P. Margallo
+Contact Number: 09123456789
+Address: Taiwan
+Date: June 25, 2022
+Fever? No
+Cough? Yes
+Sore Throat? No 
+Headache? No
+COVID contact? Yes
+Gone outside the country? Yes
+

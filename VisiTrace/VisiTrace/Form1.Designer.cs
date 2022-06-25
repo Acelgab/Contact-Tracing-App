@@ -55,13 +55,15 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnNewForm = new System.Windows.Forms.Button();
             this.btnRecords = new System.Windows.Forms.Button();
-            this.RecordList = new System.Windows.Forms.ListBox();
             this.lblSpecifyDate = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtbxSearch = new System.Windows.Forms.TextBox();
             this.lblYear = new System.Windows.Forms.Label();
             this.lblDay = new System.Windows.Forms.Label();
             this.lblMonth = new System.Windows.Forms.Label();
+            this.RecordList = new System.Windows.Forms.ListBox();
+            this.record2 = new System.Windows.Forms.RichTextBox();
+            this.btnPastRegist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -342,25 +344,13 @@
             this.btnRecords.UseVisualStyleBackColor = false;
             this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
             // 
-            // RecordList
-            // 
-            this.RecordList.BackColor = System.Drawing.Color.MidnightBlue;
-            this.RecordList.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.RecordList.FormattingEnabled = true;
-            this.RecordList.ItemHeight = 16;
-            this.RecordList.Location = new System.Drawing.Point(25, 169);
-            this.RecordList.Name = "RecordList";
-            this.RecordList.Size = new System.Drawing.Size(606, 148);
-            this.RecordList.TabIndex = 28;
-            this.RecordList.SelectedIndexChanged += new System.EventHandler(this.RecordListtry_SelectedIndexChanged);
-            // 
             // lblSpecifyDate
             // 
             this.lblSpecifyDate.AutoSize = true;
             this.lblSpecifyDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblSpecifyDate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpecifyDate.ForeColor = System.Drawing.Color.Navy;
-            this.lblSpecifyDate.Location = new System.Drawing.Point(156, 134);
+            this.lblSpecifyDate.Location = new System.Drawing.Point(12, 145);
             this.lblSpecifyDate.Name = "lblSpecifyDate";
             this.lblSpecifyDate.Size = new System.Drawing.Size(76, 15);
             this.lblSpecifyDate.TabIndex = 31;
@@ -372,7 +362,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSearch.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Snow;
-            this.btnSearch.Location = new System.Drawing.Point(450, 131);
+            this.btnSearch.Location = new System.Drawing.Point(295, 140);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(74, 24);
             this.btnSearch.TabIndex = 29;
@@ -383,7 +373,7 @@
             // txtbxSearch
             // 
             this.txtbxSearch.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtbxSearch.Location = new System.Drawing.Point(238, 130);
+            this.txtbxSearch.Location = new System.Drawing.Point(91, 144);
             this.txtbxSearch.Name = "txtbxSearch";
             this.txtbxSearch.Size = new System.Drawing.Size(198, 23);
             this.txtbxSearch.TabIndex = 30;
@@ -427,12 +417,50 @@
             this.lblMonth.Text = "Month";
             this.lblMonth.Click += new System.EventHandler(this.label3_Click);
             // 
+            // RecordList
+            // 
+            this.RecordList.BackColor = System.Drawing.Color.MidnightBlue;
+            this.RecordList.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.RecordList.FormattingEnabled = true;
+            this.RecordList.ItemHeight = 16;
+            this.RecordList.Location = new System.Drawing.Point(12, 173);
+            this.RecordList.Name = "RecordList";
+            this.RecordList.Size = new System.Drawing.Size(178, 148);
+            this.RecordList.TabIndex = 28;
+            this.RecordList.SelectedIndexChanged += new System.EventHandler(this.RecordListtry_SelectedIndexChanged);
+            // 
+            // record2
+            // 
+            this.record2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.record2.Location = new System.Drawing.Point(196, 173);
+            this.record2.Name = "record2";
+            this.record2.Size = new System.Drawing.Size(429, 148);
+            this.record2.TabIndex = 35;
+            this.record2.Text = "";
+            this.record2.TextChanged += new System.EventHandler(this.record2_TextChanged);
+            // 
+            // btnPastRegist
+            // 
+            this.btnPastRegist.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnPastRegist.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPastRegist.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPastRegist.ForeColor = System.Drawing.Color.Snow;
+            this.btnPastRegist.Location = new System.Drawing.Point(375, 139);
+            this.btnPastRegist.Name = "btnPastRegist";
+            this.btnPastRegist.Size = new System.Drawing.Size(176, 24);
+            this.btnPastRegist.TabIndex = 36;
+            this.btnPastRegist.Text = "See past registries";
+            this.btnPastRegist.UseVisualStyleBackColor = false;
+            this.btnPastRegist.Click += new System.EventHandler(this.btnPastRegist_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(649, 382);
+            this.Controls.Add(this.btnPastRegist);
+            this.Controls.Add(this.record2);
             this.Controls.Add(this.lblMonth);
             this.Controls.Add(this.lblDay);
             this.Controls.Add(this.lblYear);
@@ -510,13 +538,15 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnNewForm;
         private System.Windows.Forms.Button btnRecords;
-        private System.Windows.Forms.ListBox RecordList;
         private System.Windows.Forms.Label lblSpecifyDate;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtbxSearch;
         private System.Windows.Forms.Label lblYear;
         private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label lblMonth;
+        private System.Windows.Forms.ListBox RecordList;
+        private System.Windows.Forms.RichTextBox record2;
+        private System.Windows.Forms.Button btnPastRegist;
     }
 }
 

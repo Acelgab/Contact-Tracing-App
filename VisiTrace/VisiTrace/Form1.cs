@@ -49,6 +49,8 @@ namespace VisiTrace
             lblMonth.Hide();
             lblDay.Hide();
             lblYear.Hide();
+            btnPastRegist.Hide();
+            record2.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -87,6 +89,8 @@ namespace VisiTrace
             lblMonth.Show();
             lblDay.Show();
             lblYear.Show();
+            btnPastRegist.Hide();
+            record2.Hide();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -115,13 +119,7 @@ namespace VisiTrace
         }
         private void RecordListtry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            StreamReader record = new StreamReader(Application.StartupPath + "\\Records\\" + "June 24, 2022.txt");
-            StreamReader list = new StreamReader(Application.StartupPath + "\\Records\\" + "June 25, 2022.txt");
-            String line = record.ReadLine();
-            RecordList.Items.Add(record.ReadToEnd());
-            RecordList.Text = list.ReadToEnd();
-            record.Close();
-            list.Close();
+            
         }
         private void btnRecords_Click(object sender, EventArgs e)
         {
@@ -154,7 +152,7 @@ namespace VisiTrace
             lblYear.Hide();
             lblMonth.Hide();
             lblDay.Hide();
-
+            btnPastRegist.Show();
           
         }
 
@@ -214,6 +212,22 @@ namespace VisiTrace
             StreamReader reader = new StreamReader(Application.StartupPath + "\\Records\\" + txtbxDate.Text + ".txt");
             RecordList.Text = reader.ReadToEnd();
             reader.Close();
+        }
+
+        private void btnPastRegist_Click(object sender, EventArgs e)
+        {
+            record2.Show();
+            StreamReader record = new StreamReader(Application.StartupPath + "\\Records\\" + "June 24, 2022.txt");
+            StreamReader list = new StreamReader(Application.StartupPath + "\\Records\\" + "June 25, 2022.txt");
+            record2.Text = record.ReadToEnd();
+            record2.Text = list.ReadToEnd();
+            record.Close();
+            list.Close();
+        }
+
+        private void record2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
