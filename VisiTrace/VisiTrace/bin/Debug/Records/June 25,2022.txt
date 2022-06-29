@@ -1,0 +1,11 @@
+Name: Acel 
+Contact Number: 09123456789
+Address: Canada
+Date: June 25,2022
+Fever? Yes
+Cough? Yes
+Sore Throat? Yes
+Headache? Yes
+COVID contact? Yes
+Gone outside the country? Yes
+

@@ -31,3 +31,58 @@ Headache? No
 COVID contact? Yes
 Gone outside the country? Yes
 
+Name: Apple D. Pie
+Contact Number: 09234567891
+Address: Forest
+Date: June 25, 2022
+Fever? Yes
+Cough? Yes
+Sore Throat? Yes
+Headache? Yes
+COVID contact? Yes
+Gone outside the country? Yes
+
+Name: Acel
+Contact Number: 09123456789
+Address: Canada
+Date: June 25, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+
+Name: Acel
+Contact Number: 09123456789
+Address: Japan
+Date: June 25, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+
+Name: Acel
+Contact Number: 09123456789
+Address: Japan
+Date: June 25, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+
+Name: Gabrielle
+Contact Number: 09123456789
+Address: Tokyo, Japan
+Date: June 25, 2022
+Fever? No
+Cough? No
+Sore Throat? Yes
+Headache? Yes 
+COVID contact? No
+Gone outside the country? No
+

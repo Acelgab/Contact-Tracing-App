@@ -9,3 +9,14 @@ Headache?
 COVID contact? 
 Gone outside the country? 
 
+Name: Twen T. Two
+Contact Number: 09345678910
+Address: Brgy. Birhen
+Date: June 24, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+

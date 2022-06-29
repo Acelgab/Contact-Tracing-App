@@ -64,6 +64,7 @@
             this.RecordList = new System.Windows.Forms.ListBox();
             this.record2 = new System.Windows.Forms.RichTextBox();
             this.btnPastRegist = new System.Windows.Forms.Button();
+            this.btnGenerate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -372,7 +373,7 @@
             // 
             // txtbxSearch
             // 
-            this.txtbxSearch.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtbxSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtbxSearch.Location = new System.Drawing.Point(91, 144);
             this.txtbxSearch.Name = "txtbxSearch";
             this.txtbxSearch.Size = new System.Drawing.Size(198, 23);
@@ -454,12 +455,27 @@
             this.btnPastRegist.UseVisualStyleBackColor = false;
             this.btnPastRegist.Click += new System.EventHandler(this.btnPastRegist_Click);
             // 
+            // btnGenerate
+            // 
+            this.btnGenerate.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.ForeColor = System.Drawing.Color.Snow;
+            this.btnGenerate.Location = new System.Drawing.Point(11, 335);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(129, 24);
+            this.btnGenerate.TabIndex = 37;
+            this.btnGenerate.Text = "Generate QR Code";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(649, 382);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.btnPastRegist);
             this.Controls.Add(this.record2);
             this.Controls.Add(this.lblMonth);
@@ -548,6 +564,7 @@
         private System.Windows.Forms.ListBox RecordList;
         private System.Windows.Forms.RichTextBox record2;
         private System.Windows.Forms.Button btnPastRegist;
+        private System.Windows.Forms.Button btnGenerate;
     }
 }
 
