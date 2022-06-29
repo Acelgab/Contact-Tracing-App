@@ -51,7 +51,7 @@ namespace VisiTrace
             lblYear.Hide();
             btnPastRegist.Hide();
             record2.Hide();
-            btnGenerate.Hide();
+            btnGetQR.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace VisiTrace
             lblYear.Show();
             btnPastRegist.Hide();
             record2.Hide();
-            btnGenerate.Show();
+            btnGetQR.Show();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -156,7 +156,7 @@ namespace VisiTrace
             lblDay.Hide();
             btnPastRegist.Show();
             record2.Show();
-            btnGenerate.Hide();
+            btnGetQR.Hide();
         }
 
 

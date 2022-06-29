@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblApp = new System.Windows.Forms.Label();
             this.btnTraceMe = new System.Windows.Forms.Button();
             this.lblFullName = new System.Windows.Forms.Label();
@@ -64,22 +63,10 @@
             this.RecordList = new System.Windows.Forms.ListBox();
             this.record2 = new System.Windows.Forms.RichTextBox();
             this.btnPastRegist = new System.Windows.Forms.Button();
-            this.btnGenerate = new System.Windows.Forms.Button();
+            this.btnGetQR = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(214, -12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblApp
             // 
@@ -455,19 +442,32 @@
             this.btnPastRegist.UseVisualStyleBackColor = false;
             this.btnPastRegist.Click += new System.EventHandler(this.btnPastRegist_Click);
             // 
-            // btnGenerate
+            // btnGetQR
             // 
-            this.btnGenerate.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGenerate.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.ForeColor = System.Drawing.Color.Snow;
-            this.btnGenerate.Location = new System.Drawing.Point(11, 335);
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(129, 24);
-            this.btnGenerate.TabIndex = 37;
-            this.btnGenerate.Text = "Generate QR Code";
-            this.btnGenerate.UseVisualStyleBackColor = false;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            this.btnGetQR.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnGetQR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGetQR.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGetQR.ForeColor = System.Drawing.Color.Snow;
+            this.btnGetQR.Location = new System.Drawing.Point(11, 335);
+            this.btnGetQR.Name = "btnGetQR";
+            this.btnGetQR.Size = new System.Drawing.Size(108, 24);
+            this.btnGetQR.TabIndex = 37;
+            this.btnGetQR.Text = "Get QR Code";
+            this.btnGetQR.UseVisualStyleBackColor = false;
+            this.btnGetQR.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(214, -12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -475,7 +475,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(649, 382);
-            this.Controls.Add(this.btnGenerate);
+            this.Controls.Add(this.btnGetQR);
             this.Controls.Add(this.btnPastRegist);
             this.Controls.Add(this.record2);
             this.Controls.Add(this.lblMonth);
@@ -564,7 +564,7 @@
         private System.Windows.Forms.ListBox RecordList;
         private System.Windows.Forms.RichTextBox record2;
         private System.Windows.Forms.Button btnPastRegist;
-        private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.Button btnGetQR;
     }
 }
 
