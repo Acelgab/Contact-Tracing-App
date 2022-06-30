@@ -75,7 +75,6 @@
             this.pctrbxScan = new System.Windows.Forms.PictureBox();
             this.btnCloseCam = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).BeginInit();
@@ -525,7 +524,7 @@
             // cmbxCam
             // 
             this.cmbxCam.FormattingEnabled = true;
-            this.cmbxCam.Location = new System.Drawing.Point(99, 425);
+            this.cmbxCam.Location = new System.Drawing.Point(480, 403);
             this.cmbxCam.Name = "cmbxCam";
             this.cmbxCam.Size = new System.Drawing.Size(166, 24);
             this.cmbxCam.TabIndex = 42;
@@ -536,7 +535,7 @@
             this.lblChooseCam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblChooseCam.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChooseCam.ForeColor = System.Drawing.Color.Navy;
-            this.lblChooseCam.Location = new System.Drawing.Point(12, 429);
+            this.lblChooseCam.Location = new System.Drawing.Point(477, 385);
             this.lblChooseCam.Name = "lblChooseCam";
             this.lblChooseCam.Size = new System.Drawing.Size(84, 15);
             this.lblChooseCam.TabIndex = 43;
@@ -548,7 +547,7 @@
             this.btnScanStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnScanStart.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScanStart.ForeColor = System.Drawing.Color.Snow;
-            this.btnScanStart.Location = new System.Drawing.Point(91, 685);
+            this.btnScanStart.Location = new System.Drawing.Point(480, 446);
             this.btnScanStart.Name = "btnScanStart";
             this.btnScanStart.Size = new System.Drawing.Size(75, 24);
             this.btnScanStart.TabIndex = 45;
@@ -559,7 +558,7 @@
             // pctrbxScan
             // 
             this.pctrbxScan.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxScan.Location = new System.Drawing.Point(15, 469);
+            this.pctrbxScan.Location = new System.Drawing.Point(18, 403);
             this.pctrbxScan.Name = "pctrbxScan";
             this.pctrbxScan.Size = new System.Drawing.Size(456, 249);
             this.pctrbxScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -572,11 +571,11 @@
             this.btnCloseCam.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCloseCam.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseCam.ForeColor = System.Drawing.Color.Snow;
-            this.btnCloseCam.Location = new System.Drawing.Point(172, 685);
+            this.btnCloseCam.Location = new System.Drawing.Point(480, 486);
             this.btnCloseCam.Name = "btnCloseCam";
-            this.btnCloseCam.Size = new System.Drawing.Size(93, 24);
+            this.btnCloseCam.Size = new System.Drawing.Size(104, 24);
             this.btnCloseCam.TabIndex = 46;
-            this.btnCloseCam.Text = "Close Camera";
+            this.btnCloseCam.Text = "Stop Scanning";
             this.btnCloseCam.UseVisualStyleBackColor = false;
             this.btnCloseCam.Click += new System.EventHandler(this.btnCloseCam_Click);
             // 
@@ -585,13 +584,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(921, -1);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 750);
-            this.vScrollBar1.TabIndex = 47;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -599,8 +591,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(937, 749);
-            this.Controls.Add(this.vScrollBar1);
+            this.ClientSize = new System.Drawing.Size(937, 732);
             this.Controls.Add(this.btnCloseCam);
             this.Controls.Add(this.btnScanStart);
             this.Controls.Add(this.pctrbxScan);
@@ -710,7 +701,6 @@
         private System.Windows.Forms.PictureBox pctrbxScan;
         private System.Windows.Forms.Button btnCloseCam;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 

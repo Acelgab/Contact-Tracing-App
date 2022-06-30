@@ -301,6 +301,7 @@ namespace VisiTrace
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
 
+            timer1.Start();
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -318,15 +319,25 @@ namespace VisiTrace
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           /* if (pctrbxScan.Image != null)
+            string fill = txtbxFullName.Text + txtbxContactNo.Text + txtbxAddress.Text + txtbxDate.Text + txtbxQuestion1.Text + txtbxQuestion2.Text + txtbxQuestion3.Text + txtbxQuestion4.Text + txtbxQuestion5.Text + txtbxQuestion6.Text;
+            if (pctrbxScan.Image != null)
             {
                 BarcodeReader barcodeReader = new BarcodeReader();
                 Result result = barcodeReader.Decode((Bitmap)pctrbxScan.Image);
-                if(result ! = null)
+                if (result != null)
                 {
-                   data
-                }*/
-            
+                    fill = result.ToString();
+
+                    timer1.Stop();
+
+                    if (captureDevice.IsRunning)
+                    {
+                        captureDevice.Stop();
+                    }
+
+                }
+            }
+
         }
     }
 }
