@@ -64,11 +64,18 @@
             this.record2 = new System.Windows.Forms.RichTextBox();
             this.btnPastRegist = new System.Windows.Forms.Button();
             this.btnGetQR = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pctrbxQR = new System.Windows.Forms.PictureBox();
             this.btnSaveQR = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnScan = new System.Windows.Forms.Button();
+            this.pctrbxQR = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbxCam = new System.Windows.Forms.ComboBox();
+            this.lblChooseCam = new System.Windows.Forms.Label();
+            this.btnScanStart = new System.Windows.Forms.Button();
+            this.pctrbxScan = new System.Windows.Forms.PictureBox();
+            this.btnCloseCam = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).BeginInit();
             this.SuspendLayout();
             // 
             // lblApp
@@ -459,30 +466,6 @@
             this.btnGetQR.UseVisualStyleBackColor = false;
             this.btnGetQR.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(214, -12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 108);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pctrbxQR
-            // 
-            this.pctrbxQR.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxQR.Location = new System.Drawing.Point(665, 105);
-            this.pctrbxQR.Name = "pctrbxQR";
-            this.pctrbxQR.Size = new System.Drawing.Size(232, 173);
-            this.pctrbxQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctrbxQR.TabIndex = 38;
-            this.pctrbxQR.TabStop = false;
-            this.pctrbxQR.Click += new System.EventHandler(this.pctrbxQR_Click);
-            // 
             // btnSaveQR
             // 
             this.btnSaveQR.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -497,6 +480,103 @@
             this.btnSaveQR.UseVisualStyleBackColor = false;
             this.btnSaveQR.Click += new System.EventHandler(this.btnSaveQR_Click);
             // 
+            // btnScan
+            // 
+            this.btnScan.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnScan.BackgroundImage = global::VisiTrace.Properties.Resources._360_F_223885881_Zotk7yyvWJDvq6iWq2A9XU60iVJEnrzC;
+            this.btnScan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnScan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnScan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScan.ForeColor = System.Drawing.Color.Snow;
+            this.btnScan.Location = new System.Drawing.Point(-4, 55);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(55, 32);
+            this.btnScan.TabIndex = 40;
+            this.btnScan.UseVisualStyleBackColor = false;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
+            // pctrbxQR
+            // 
+            this.pctrbxQR.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxQR.Location = new System.Drawing.Point(665, 105);
+            this.pctrbxQR.Name = "pctrbxQR";
+            this.pctrbxQR.Size = new System.Drawing.Size(232, 173);
+            this.pctrbxQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrbxQR.TabIndex = 38;
+            this.pctrbxQR.TabStop = false;
+            this.pctrbxQR.Click += new System.EventHandler(this.pctrbxQR_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::VisiTrace.Properties.Resources.image_2022_06_08_135506116_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(214, -12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(96, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // cmbxCam
+            // 
+            this.cmbxCam.FormattingEnabled = true;
+            this.cmbxCam.Location = new System.Drawing.Point(99, 425);
+            this.cmbxCam.Name = "cmbxCam";
+            this.cmbxCam.Size = new System.Drawing.Size(166, 24);
+            this.cmbxCam.TabIndex = 42;
+            // 
+            // lblChooseCam
+            // 
+            this.lblChooseCam.AutoSize = true;
+            this.lblChooseCam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblChooseCam.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChooseCam.ForeColor = System.Drawing.Color.Navy;
+            this.lblChooseCam.Location = new System.Drawing.Point(12, 429);
+            this.lblChooseCam.Name = "lblChooseCam";
+            this.lblChooseCam.Size = new System.Drawing.Size(84, 15);
+            this.lblChooseCam.TabIndex = 43;
+            this.lblChooseCam.Text = "Choose camera";
+            // 
+            // btnScanStart
+            // 
+            this.btnScanStart.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnScanStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnScanStart.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScanStart.ForeColor = System.Drawing.Color.Snow;
+            this.btnScanStart.Location = new System.Drawing.Point(91, 685);
+            this.btnScanStart.Name = "btnScanStart";
+            this.btnScanStart.Size = new System.Drawing.Size(75, 24);
+            this.btnScanStart.TabIndex = 45;
+            this.btnScanStart.Text = "Scan";
+            this.btnScanStart.UseVisualStyleBackColor = false;
+            this.btnScanStart.Click += new System.EventHandler(this.btnScanStart_Click);
+            // 
+            // pctrbxScan
+            // 
+            this.pctrbxScan.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxScan.Location = new System.Drawing.Point(15, 469);
+            this.pctrbxScan.Name = "pctrbxScan";
+            this.pctrbxScan.Size = new System.Drawing.Size(456, 249);
+            this.pctrbxScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrbxScan.TabIndex = 44;
+            this.pctrbxScan.TabStop = false;
+            // 
+            // btnCloseCam
+            // 
+            this.btnCloseCam.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnCloseCam.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCloseCam.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseCam.ForeColor = System.Drawing.Color.Snow;
+            this.btnCloseCam.Location = new System.Drawing.Point(172, 685);
+            this.btnCloseCam.Name = "btnCloseCam";
+            this.btnCloseCam.Size = new System.Drawing.Size(93, 24);
+            this.btnCloseCam.TabIndex = 46;
+            this.btnCloseCam.Text = "Close Camera";
+            this.btnCloseCam.UseVisualStyleBackColor = false;
+            this.btnCloseCam.Click += new System.EventHandler(this.btnCloseCam_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -504,7 +584,13 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(937, 477);
+            this.ClientSize = new System.Drawing.Size(937, 749);
+            this.Controls.Add(this.btnCloseCam);
+            this.Controls.Add(this.btnScanStart);
+            this.Controls.Add(this.pctrbxScan);
+            this.Controls.Add(this.lblChooseCam);
+            this.Controls.Add(this.cmbxCam);
+            this.Controls.Add(this.btnScan);
             this.Controls.Add(this.btnSaveQR);
             this.Controls.Add(this.pctrbxQR);
             this.Controls.Add(this.btnGetQR);
@@ -553,8 +639,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VisiTrace";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,6 +687,12 @@
         private System.Windows.Forms.Button btnGetQR;
         private System.Windows.Forms.PictureBox pctrbxQR;
         private System.Windows.Forms.Button btnSaveQR;
+        private System.Windows.Forms.Button btnScan;
+        private System.Windows.Forms.ComboBox cmbxCam;
+        private System.Windows.Forms.Label lblChooseCam;
+        private System.Windows.Forms.Button btnScanStart;
+        private System.Windows.Forms.PictureBox pctrbxScan;
+        private System.Windows.Forms.Button btnCloseCam;
     }
 }
 

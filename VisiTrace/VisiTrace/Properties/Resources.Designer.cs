@@ -63,6 +63,16 @@ namespace VisiTrace.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _360_F_223885881_Zotk7yyvWJDvq6iWq2A9XU60iVJEnrzC {
+            get {
+                object obj = ResourceManager.GetObject("360_F_223885881_Zotk7yyvWJDvq6iWq2A9XU60iVJEnrzC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_2022_06_08_135506116_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("image_2022-06-08_135506116-removebg-preview", resourceCulture);

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using QRCoder;
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace VisiTrace
 {
@@ -18,9 +20,15 @@ namespace VisiTrace
         {
             InitializeComponent();
         }
-
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
         private void Form1_Load(object sender, EventArgs e)
         {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+                cmbxCam.Items.Add(filterInfo.Name);
+            cmbxCam.SelectedIndex = 0;
+
             lblFullName.Hide();
             txtbxFullName.Hide();
             lblAddress.Hide();
@@ -54,6 +62,11 @@ namespace VisiTrace
             record2.Hide();
             btnGetQR.Hide();
             btnSaveQR.Hide();
+            cmbxCam.Hide();
+            lblChooseCam.Hide();
+            btnScanStart.Hide();
+            pctrbxScan.Hide();
+            btnCloseCam.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -160,6 +173,13 @@ namespace VisiTrace
             btnPastRegist.Show();
             record2.Show();
             btnGetQR.Hide();
+            pctrbxQR.Hide();
+            btnSaveQR.Hide();
+            cmbxCam.Hide();
+            lblChooseCam.Hide();
+            pctrbxScan.Hide();
+            btnScanStart.Hide();
+            btnCloseCam.Hide();
         }
 
 
@@ -261,6 +281,37 @@ namespace VisiTrace
             if(dialog.ShowDialog() == DialogResult.OK)
             {
                 pctrbxQR.Image.Save(dialog.FileName);
+            }
+        }
+
+        private void btnScan_Click(object sender, EventArgs e)
+        {
+            lblChooseCam.Show();
+            cmbxCam.Show();
+            pctrbxScan.Show();
+            btnScanStart.Show();
+            btnCloseCam.Show();
+        }
+
+        private void btnScanStart_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cmbxCam.SelectedIndex].MonikerString);
+            //NewFrameEventHandler CaptureDevice_NewFrame = null;
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pctrbxScan.Image=(Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void btnCloseCam_Click(object sender, EventArgs e)
+        {
+            if (captureDevice.IsRunning)
+            { 
+                captureDevice.Stop();
             }
         }
     }
