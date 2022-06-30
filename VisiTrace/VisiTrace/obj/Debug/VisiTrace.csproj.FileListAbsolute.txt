@@ -24,3 +24,13 @@ C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiT
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.Form2.resources
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\QRCoder.dll
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.csproj.CopyComplete
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.Video.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\zxing.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\zxing.presentation.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.Video.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\zxing.xml
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\zxing.presentation.xml

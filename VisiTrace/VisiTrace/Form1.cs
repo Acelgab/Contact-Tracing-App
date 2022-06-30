@@ -11,6 +11,7 @@ using System.IO;
 using QRCoder;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace VisiTrace
 {
@@ -313,6 +314,19 @@ namespace VisiTrace
             { 
                 captureDevice.Stop();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           /* if (pctrbxScan.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)pctrbxScan.Image);
+                if(result ! = null)
+                {
+                   data
+                }*/
+            
         }
     }
 }

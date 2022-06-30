@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblApp = new System.Windows.Forms.Label();
             this.btnTraceMe = new System.Windows.Forms.Button();
@@ -73,6 +74,8 @@
             this.btnScanStart = new System.Windows.Forms.Button();
             this.pctrbxScan = new System.Windows.Forms.PictureBox();
             this.btnCloseCam = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).BeginInit();
@@ -577,6 +580,18 @@
             this.btnCloseCam.UseVisualStyleBackColor = false;
             this.btnCloseCam.Click += new System.EventHandler(this.btnCloseCam_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(921, -1);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 750);
+            this.vScrollBar1.TabIndex = 47;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -585,6 +600,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.ClientSize = new System.Drawing.Size(937, 749);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.btnCloseCam);
             this.Controls.Add(this.btnScanStart);
             this.Controls.Add(this.pctrbxScan);
@@ -693,6 +709,8 @@
         private System.Windows.Forms.Button btnScanStart;
         private System.Windows.Forms.PictureBox pctrbxScan;
         private System.Windows.Forms.Button btnCloseCam;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 
