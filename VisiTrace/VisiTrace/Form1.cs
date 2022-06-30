@@ -251,6 +251,18 @@ namespace VisiTrace
         {
 
         }
+
+        private void btnSaveQR_Click(object sender, EventArgs e)
+        {
+            string directory = @"QR Codes";
+            var dialog = new SaveFileDialog();
+            dialog.InitialDirectory = directory;
+            dialog.Filter = "PNG|*.png|JPEG|*.jpg|BMP|*.bmp|GIF|*.gif";
+            if(dialog.ShowDialog() == DialogResult.OK)
+            {
+                pctrbxQR.Image.Save(dialog.FileName);
+            }
+        }
     }
 }
        

@@ -495,6 +495,7 @@
             this.btnSaveQR.TabIndex = 39;
             this.btnSaveQR.Text = "Save QR Code";
             this.btnSaveQR.UseVisualStyleBackColor = false;
+            this.btnSaveQR.Click += new System.EventHandler(this.btnSaveQR_Click);
             // 
             // Form1
             // 
