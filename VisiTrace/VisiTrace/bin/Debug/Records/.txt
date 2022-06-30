@@ -53,3 +53,14 @@ Headache?
 COVID contact? 
 Gone outside the country? 
 
+Name: 
+Contact Number: 
+Address: Japan
+Date: 
+Fever? 
+Cough? 
+Sore Throat? 
+Headache? 
+COVID contact? 
+Gone outside the country? 
+

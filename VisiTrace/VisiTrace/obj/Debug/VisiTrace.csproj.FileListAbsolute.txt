@@ -22,3 +22,5 @@ C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiT
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.pdb
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.Records.resources
 C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.Form2.resources
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\bin\Debug\QRCoder.dll
+C:\Users\Acel\Desktop\Visual Studio Projects\Contact Tracing App\VisiTrace\VisiTrace\obj\Debug\VisiTrace.csproj.CopyComplete

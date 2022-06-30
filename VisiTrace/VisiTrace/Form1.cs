@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using QRCoder;
 
 namespace VisiTrace
 {
@@ -52,6 +53,7 @@ namespace VisiTrace
             btnPastRegist.Hide();
             record2.Hide();
             btnGetQR.Hide();
+            btnSaveQR.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -93,6 +95,7 @@ namespace VisiTrace
             btnPastRegist.Hide();
             record2.Hide();
             btnGetQR.Show();
+            pctrbxQR.Hide();
         }
 
         private void lblFullName_Click(object sender, EventArgs e)
@@ -235,11 +238,18 @@ namespace VisiTrace
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
-            f2 = null;
-            this.Show();
+            pctrbxQR.Show();
+            string data = txtbxFullName.Text + txtbxContactNo.Text + txtbxAddress.Text + txtbxDate.Text +txtbxQuestion1.Text + txtbxQuestion2.Text + txtbxQuestion3.Text + txtbxQuestion4.Text + txtbxQuestion5.Text + txtbxQuestion6.Text;
+            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+            var generate = QG.CreateQrCode(data, QRCoder.QRCodeGenerator.ECCLevel.H);
+            var code = new QRCoder.QRCode(generate);
+            pctrbxQR.Image = code.GetGraphic(50);
+            btnSaveQR.Show();
+        }
+
+        private void pctrbxQR_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

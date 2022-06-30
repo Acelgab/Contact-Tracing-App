@@ -65,7 +65,10 @@
             this.btnPastRegist = new System.Windows.Forms.Button();
             this.btnGetQR = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pctrbxQR = new System.Windows.Forms.PictureBox();
+            this.btnSaveQR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
             this.SuspendLayout();
             // 
             // lblApp
@@ -411,7 +414,7 @@
             this.RecordList.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.RecordList.FormattingEnabled = true;
             this.RecordList.ItemHeight = 16;
-            this.RecordList.Location = new System.Drawing.Point(12, 173);
+            this.RecordList.Location = new System.Drawing.Point(15, 173);
             this.RecordList.Name = "RecordList";
             this.RecordList.Size = new System.Drawing.Size(178, 148);
             this.RecordList.TabIndex = 28;
@@ -421,7 +424,7 @@
             // 
             this.record2.BackColor = System.Drawing.Color.MidnightBlue;
             this.record2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.record2.Location = new System.Drawing.Point(196, 173);
+            this.record2.Location = new System.Drawing.Point(199, 176);
             this.record2.Name = "record2";
             this.record2.Size = new System.Drawing.Size(429, 148);
             this.record2.TabIndex = 35;
@@ -448,7 +451,7 @@
             this.btnGetQR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGetQR.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGetQR.ForeColor = System.Drawing.Color.Snow;
-            this.btnGetQR.Location = new System.Drawing.Point(11, 335);
+            this.btnGetQR.Location = new System.Drawing.Point(665, 55);
             this.btnGetQR.Name = "btnGetQR";
             this.btnGetQR.Size = new System.Drawing.Size(108, 24);
             this.btnGetQR.TabIndex = 37;
@@ -469,12 +472,40 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // pctrbxQR
+            // 
+            this.pctrbxQR.BackColor = System.Drawing.Color.Transparent;
+            this.pctrbxQR.Location = new System.Drawing.Point(665, 105);
+            this.pctrbxQR.Name = "pctrbxQR";
+            this.pctrbxQR.Size = new System.Drawing.Size(232, 173);
+            this.pctrbxQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrbxQR.TabIndex = 38;
+            this.pctrbxQR.TabStop = false;
+            this.pctrbxQR.Click += new System.EventHandler(this.pctrbxQR_Click);
+            // 
+            // btnSaveQR
+            // 
+            this.btnSaveQR.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnSaveQR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSaveQR.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveQR.ForeColor = System.Drawing.Color.Snow;
+            this.btnSaveQR.Location = new System.Drawing.Point(789, 55);
+            this.btnSaveQR.Name = "btnSaveQR";
+            this.btnSaveQR.Size = new System.Drawing.Size(108, 24);
+            this.btnSaveQR.TabIndex = 39;
+            this.btnSaveQR.Text = "Save QR Code";
+            this.btnSaveQR.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(649, 382);
+            this.ClientSize = new System.Drawing.Size(937, 477);
+            this.Controls.Add(this.btnSaveQR);
+            this.Controls.Add(this.pctrbxQR);
             this.Controls.Add(this.btnGetQR);
             this.Controls.Add(this.btnPastRegist);
             this.Controls.Add(this.record2);
@@ -522,6 +553,7 @@
             this.Text = "VisiTrace";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,6 +597,8 @@
         private System.Windows.Forms.RichTextBox record2;
         private System.Windows.Forms.Button btnPastRegist;
         private System.Windows.Forms.Button btnGetQR;
+        private System.Windows.Forms.PictureBox pctrbxQR;
+        private System.Windows.Forms.Button btnSaveQR;
     }
 }
 

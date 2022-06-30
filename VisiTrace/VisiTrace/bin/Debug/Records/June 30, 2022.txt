@@ -1,0 +1,33 @@
+Name: Acel
+Contact Number: 03123456789
+Address: Japan
+Date: June 30, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+
+Name: 
+Contact Number: 
+Address: Japan
+Date: June 30, 2022
+Fever? 
+Cough? 
+Sore Throat? 
+Headache? 
+COVID contact? 
+Gone outside the country? 
+
+Name: Acel 
+Contact Number: 09123456789
+Address: China
+Date: June 30, 2022
+Fever? 
+Cough? 
+Sore Throat? 
+Headache? 
+COVID contact? 
+Gone outside the country? 
+
