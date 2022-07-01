@@ -9,3 +9,25 @@ Headache? No
 COVID contact? No
 Gone outside the country? No
 
+Name: Acel
+Contact Number: 0912
+Address: NO IdEA
+Date: July 01, 2022
+Fever? No
+Cough? No
+Sore Throat? No
+Headache? No
+COVID contact? No
+Gone outside the country? No
+
+Name: Chito
+Contact Number: 0914324
+Address: Mini Batangas
+Date: July 01, 2022
+Fever? No
+Cough? Yes
+Sore Throat? No
+Headache? Yes
+COVID contact? No
+Gone outside the country? Yes
+

@@ -260,7 +260,10 @@ namespace VisiTrace
         private void btnGenerate_Click(object sender, EventArgs e)
         {
             pctrbxQR.Show();
-            string data = txtbxFullName.Text + txtbxContactNo.Text + txtbxAddress.Text + txtbxDate.Text +txtbxQuestion1.Text + txtbxQuestion2.Text + txtbxQuestion3.Text + txtbxQuestion4.Text + txtbxQuestion5.Text + txtbxQuestion6.Text;
+            string data = txtbxFullName.Text + "\r\n" + txtbxContactNo.Text + "\r\n" + txtbxAddress.Text + "\r\n" +txtbxDate.Text + "\r\n" +
+                txtbxQuestion1.Text + "\r\n" + txtbxQuestion2.Text + "\r\n" +
+                txtbxQuestion3.Text + "\r\n" + txtbxQuestion4.Text + "\r\n" +
+                txtbxQuestion5.Text + "\r\n" + txtbxQuestion6.Text;
             QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
             var generate = QG.CreateQrCode(data, QRCoder.QRCodeGenerator.ECCLevel.H);
             var code = new QRCoder.QRCode(generate);
@@ -297,7 +300,6 @@ namespace VisiTrace
         private void btnScanStart_Click(object sender, EventArgs e)
         {
             captureDevice = new VideoCaptureDevice(filterInfoCollection[cmbxCam.SelectedIndex].MonikerString);
-            //NewFrameEventHandler CaptureDevice_NewFrame = null;
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
 
@@ -326,7 +328,7 @@ namespace VisiTrace
                 Result result = barcodeReader.Decode((Bitmap)pctrbxScan.Image);
                 if (result != null)
                 {
-                    fill = result.ToString();
+                    rchtxtbxQRResult.Text = result.ToString();
 
                     timer1.Stop();
 
@@ -337,6 +339,10 @@ namespace VisiTrace
 
                 }
             }
+
+        }
+        private void pctrbxScan_Click(object sender, EventArgs e)
+        {
 
         }
     }
