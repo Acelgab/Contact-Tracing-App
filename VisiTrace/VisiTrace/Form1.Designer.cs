@@ -76,6 +76,7 @@
             this.btnCloseCam = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.rchtxtbxQRResult = new System.Windows.Forms.RichTextBox();
+            this.btnFill = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbxScan)).BeginInit();
@@ -588,11 +589,25 @@
             // 
             // rchtxtbxQRResult
             // 
-            this.rchtxtbxQRResult.Location = new System.Drawing.Point(25, 493);
+            this.rchtxtbxQRResult.Location = new System.Drawing.Point(572, 385);
             this.rchtxtbxQRResult.Name = "rchtxtbxQRResult";
-            this.rchtxtbxQRResult.Size = new System.Drawing.Size(166, 141);
+            this.rchtxtbxQRResult.Size = new System.Drawing.Size(166, 249);
             this.rchtxtbxQRResult.TabIndex = 47;
             this.rchtxtbxQRResult.Text = "";
+            // 
+            // btnFill
+            // 
+            this.btnFill.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnFill.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFill.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFill.ForeColor = System.Drawing.Color.Snow;
+            this.btnFill.Location = new System.Drawing.Point(25, 493);
+            this.btnFill.Name = "btnFill";
+            this.btnFill.Size = new System.Drawing.Size(75, 24);
+            this.btnFill.TabIndex = 48;
+            this.btnFill.Text = "Fill";
+            this.btnFill.UseVisualStyleBackColor = false;
+            this.btnFill.Click += new System.EventHandler(this.btnFill_Click);
             // 
             // Form1
             // 
@@ -601,7 +616,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.ClientSize = new System.Drawing.Size(937, 732);
+            this.ClientSize = new System.Drawing.Size(937, 655);
+            this.Controls.Add(this.btnFill);
             this.Controls.Add(this.rchtxtbxQRResult);
             this.Controls.Add(this.btnCloseCam);
             this.Controls.Add(this.btnScanStart);
@@ -713,6 +729,7 @@
         private System.Windows.Forms.Button btnCloseCam;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.RichTextBox rchtxtbxQRResult;
+        private System.Windows.Forms.Button btnFill;
     }
 }
 

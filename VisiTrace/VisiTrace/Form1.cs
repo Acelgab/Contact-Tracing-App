@@ -68,6 +68,7 @@ namespace VisiTrace
             btnScanStart.Hide();
             pctrbxScan.Hide();
             btnCloseCam.Hide();
+            rchtxtbxQRResult.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -181,6 +182,7 @@ namespace VisiTrace
             pctrbxScan.Hide();
             btnScanStart.Hide();
             btnCloseCam.Hide();
+            rchtxtbxQRResult.Hide();
         }
 
 
@@ -295,6 +297,7 @@ namespace VisiTrace
             pctrbxScan.Show();
             btnScanStart.Show();
             btnCloseCam.Show();
+            rchtxtbxQRResult.Show();
         }
 
         private void btnScanStart_Click(object sender, EventArgs e)
@@ -344,6 +347,22 @@ namespace VisiTrace
         private void pctrbxScan_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFill_Click(object sender, EventArgs e)
+        {
+            string[] lines = rchtxtbxQRResult.Lines;
+            txtbxFullName.Text = lines[0];
+            txtbxContactNo.Text = lines[1];
+            txtbxAddress.Text = lines[2];
+            txtbxDate.Text = lines[3];
+            txtbxQuestion1.Text = lines[4];
+            txtbxQuestion2.Text = lines[5];
+            txtbxQuestion3.Text = lines[6];
+            txtbxQuestion4.Text = lines[7];
+            txtbxQuestion5.Text = lines[8];
+            txtbxQuestion6.Text = lines[9];
+            rchtxtbxQRResult.Lines = lines;
         }
     }
 }
