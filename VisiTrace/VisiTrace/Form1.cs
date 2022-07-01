@@ -69,6 +69,7 @@ namespace VisiTrace
             pctrbxScan.Hide();
             btnCloseCam.Hide();
             rchtxtbxQRResult.Hide();
+            btnFill.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -183,6 +184,7 @@ namespace VisiTrace
             btnScanStart.Hide();
             btnCloseCam.Hide();
             rchtxtbxQRResult.Hide();
+            btnFill.Hide();
         }
 
 
@@ -298,6 +300,7 @@ namespace VisiTrace
             btnScanStart.Show();
             btnCloseCam.Show();
             rchtxtbxQRResult.Show();
+            btnFill.Show();
         }
 
         private void btnScanStart_Click(object sender, EventArgs e)

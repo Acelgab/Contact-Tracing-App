@@ -492,7 +492,7 @@
             this.btnScan.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnScan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnScan.ForeColor = System.Drawing.Color.Snow;
-            this.btnScan.Location = new System.Drawing.Point(-4, 55);
+            this.btnScan.Location = new System.Drawing.Point(842, 286);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(55, 32);
             this.btnScan.TabIndex = 40;
@@ -560,7 +560,7 @@
             // pctrbxScan
             // 
             this.pctrbxScan.BackColor = System.Drawing.Color.Transparent;
-            this.pctrbxScan.Location = new System.Drawing.Point(219, 385);
+            this.pctrbxScan.Location = new System.Drawing.Point(398, 381);
             this.pctrbxScan.Name = "pctrbxScan";
             this.pctrbxScan.Size = new System.Drawing.Size(331, 249);
             this.pctrbxScan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -589,7 +589,7 @@
             // 
             // rchtxtbxQRResult
             // 
-            this.rchtxtbxQRResult.Location = new System.Drawing.Point(572, 385);
+            this.rchtxtbxQRResult.Location = new System.Drawing.Point(214, 381);
             this.rchtxtbxQRResult.Name = "rchtxtbxQRResult";
             this.rchtxtbxQRResult.Size = new System.Drawing.Size(166, 249);
             this.rchtxtbxQRResult.TabIndex = 47;
